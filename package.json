@@ -1,0 +1,36 @@
+{
+  "name": "docker-mysql-driver",
+  "version": "0.0.1",
+  "description": "docker mysql driver for unit test",
+  "main": "dist",
+  "engines": {
+    "node": ">=7.6.0",
+    "npm": ">=5.0"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "babel lib --out-dir dist",
+    "test": "npm run build && node ./test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:dzy321/docker-mysql-driver.git"
+  },
+  "author": "wy",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^8.0.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "eslint": "^4.8.0",
+    "eslint-config-airbnb-base": "^12.0.2",
+    "eslint-plugin-import": "^2.7.0"
+  },
+  "dependencies": {
+    "bluebird": "^3.5.1",
+    "dockerode": "^2.5.3",
+    "log": "^1.4.0"
+  }
+}
