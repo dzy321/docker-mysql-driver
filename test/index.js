@@ -1,6 +1,7 @@
 const dmd = require('../dist')
 const test = require('ava')
 const mysql = require('mysql2/promise')
+const Promise = require('bluebird')
 
 test('load not exist image', async (t) => {
   const error = await t.throws(dmd.start({ image: 'mysql:5.10000', name: 'xxxxx' }))
@@ -16,6 +17,7 @@ test('test load success', async (t) => {
       port: server.port,
       user: 'root',
       password: server.rootPwd,
+      Promise,
     })
     const [rows, fields] = await conn.execute('select ?+1 as qqq, ? as rrr, ? as yyy', [1, null, 3])
     t.is(rows[0].qqq, 2)
@@ -41,6 +43,7 @@ test('test reuse', async (t) => {
       user: 'root',
       password: server.rootPwd,
       database: server.database,
+      Promise,
     })
     const [rows, fields] = await conn.execute('show tables')
     t.is(rows.length, 0)
