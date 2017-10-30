@@ -17,7 +17,13 @@ const dmd = require('docker-mysql-driver')
 
 const mysqlServer = await dmd.start(options)
 
-console.log(mysqlServer.port, mysqlServer.rootPwd)
+console.log(
+  mysqlServer.port, // server port
+  mysqlServer.rootPwd, // root password
+  mysqlServer.database, // database name
+)
+
+mysqlServer.stop()
 ```
 
 ### Default Options

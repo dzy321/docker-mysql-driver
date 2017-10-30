@@ -12,7 +12,7 @@
   ],
   "scripts": {
     "build": "babel lib --out-dir dist",
-    "test": "npm run build && node ./test"
+    "test": "npm run build && ava"
   },
   "repository": {
     "type": "git",
@@ -21,12 +21,14 @@
   "author": "wy",
   "license": "ISC",
   "devDependencies": {
+    "ava": "^0.23.0",
     "babel-cli": "^6.26.0",
     "babel-eslint": "^8.0.1",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "eslint": "^4.8.0",
     "eslint-config-airbnb-base": "^12.0.2",
-    "eslint-plugin-import": "^2.7.0"
+    "eslint-plugin-import": "^2.7.0",
+    "mysql2": "^1.4.2"
   },
   "dependencies": {
     "bluebird": "^3.5.1",
