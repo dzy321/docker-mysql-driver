@@ -29,6 +29,7 @@ console.log(mysqlServer.port, mysqlServer.rootPwd)
   rootPwd: "123456", // root password
   reuse: true, // reuse container, container will not be delete if enabled
   name: 'mysql_test', // container name
+  database: 'test_db', // database name
   dockerConfig: undefined, // you can see: https://github.com/apocas/dockerode
 }
 ```
