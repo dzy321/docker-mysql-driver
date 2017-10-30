@@ -14,6 +14,9 @@
     "build": "babel lib --out-dir dist",
     "test": "npm run build && ava"
   },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
   "repository": {
     "type": "git",
     "url": "git@github.com:dzy321/docker-mysql-driver.git"
