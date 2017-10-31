@@ -1,7 +1,7 @@
 docker-mysql-driver
 =================
 
-![](https://img.shields.io/npm/v/docker-mysql-driver.svg?style=flat)
+[![](https://img.shields.io/npm/v/docker-mysql-driver.svg?style=flat)](https://www.npmjs.com/package/docker-mysql-driver)
 
 ## Feature
 
