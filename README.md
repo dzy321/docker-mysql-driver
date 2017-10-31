@@ -1,6 +1,8 @@
 docker-mysql-driver
 =================
 
+![](https://img.shields.io/npm/v/docker-mysql-driver.svg?style=flat)
+
 ## Feature
 
 - auto run mysql in docker
