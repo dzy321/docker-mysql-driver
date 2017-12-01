@@ -12,7 +12,8 @@
   ],
   "scripts": {
     "build": "babel lib --out-dir dist",
-    "test": "npm run build && ava"
+    "test": "npm run build && ava",
+    "prepublish": "npm run build"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
