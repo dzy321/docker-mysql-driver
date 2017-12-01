@@ -1,6 +1,6 @@
 {
   "name": "docker-mysql-driver",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "docker mysql driver for unit test",
   "main": "dist",
   "engines": {
